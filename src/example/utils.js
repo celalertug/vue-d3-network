@@ -95,7 +95,7 @@ const newNodeName = () => {
 
 // node formatter
 export const newNode = (nodeId) => {
-  return { id: nodeId, name: newNodeName() }
+  return { id: nodeId, name: newNodeName(),labelCenter:nodeId % 2 === 0 }
 }
 
 // generates random nodes => [ nodes ]
